@@ -152,6 +152,7 @@ jobs:
     runs-on: ubuntu-latest
     # Configurar un GitHub Action Environment para activar una aprobación manual
     # https://docs.github.com/en/actions/reference/environments
+    # Crear un entorno en el repositorio, con nombre testenv, que active la revisión manual de código antes del despliegue en producción.
     environment: testenv
     steps:
       - name: Instalar SAM CLI
